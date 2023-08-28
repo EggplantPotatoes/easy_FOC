@@ -21,6 +21,9 @@ six_step\stm32g4xx_hal_flash_ramfunc.o: ../Drivers/STM32G4xx_HAL_Driver/Inc/stm3
 six_step\stm32g4xx_hal_flash_ramfunc.o: ../Drivers/STM32G4xx_HAL_Driver/Inc/stm32g4xx_hal_dma.h
 six_step\stm32g4xx_hal_flash_ramfunc.o: ../Drivers/STM32G4xx_HAL_Driver/Inc/stm32g4xx_hal_dma_ex.h
 six_step\stm32g4xx_hal_flash_ramfunc.o: ../Drivers/STM32G4xx_HAL_Driver/Inc/stm32g4xx_hal_cortex.h
+six_step\stm32g4xx_hal_flash_ramfunc.o: ../Drivers/STM32G4xx_HAL_Driver/Inc/stm32g4xx_hal_adc.h
+six_step\stm32g4xx_hal_flash_ramfunc.o: ../Drivers/STM32G4xx_HAL_Driver/Inc/stm32g4xx_ll_adc.h
+six_step\stm32g4xx_hal_flash_ramfunc.o: ../Drivers/STM32G4xx_HAL_Driver/Inc/stm32g4xx_hal_adc_ex.h
 six_step\stm32g4xx_hal_flash_ramfunc.o: ../Drivers/STM32G4xx_HAL_Driver/Inc/stm32g4xx_hal_exti.h
 six_step\stm32g4xx_hal_flash_ramfunc.o: ../Drivers/STM32G4xx_HAL_Driver/Inc/stm32g4xx_hal_flash.h
 six_step\stm32g4xx_hal_flash_ramfunc.o: ../Drivers/STM32G4xx_HAL_Driver/Inc/stm32g4xx_hal_flash_ex.h

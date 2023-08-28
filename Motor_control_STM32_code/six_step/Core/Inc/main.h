@@ -62,8 +62,16 @@ void Error_Handler(void);
 /* Private defines -----------------------------------------------------------*/
 #define PWM_FREQUENCY 30000
 #define TIM_CLK_MHz 170
+#define VBUS_ADC1_1_Pin GPIO_PIN_0
+#define VBUS_ADC1_1_GPIO_Port GPIOA
+#define U_CURR_ADC1_2_Pin GPIO_PIN_1
+#define U_CURR_ADC1_2_GPIO_Port GPIOA
 #define LED_Pin GPIO_PIN_5
 #define LED_GPIO_Port GPIOA
+#define W_CURR_ADC2_4_Pin GPIO_PIN_7
+#define W_CURR_ADC2_4_GPIO_Port GPIOA
+#define V_CURR_ADC1_14_Pin GPIO_PIN_11
+#define V_CURR_ADC1_14_GPIO_Port GPIOB
 #define U_H_DOWN_Pin GPIO_PIN_13
 #define U_H_DOWN_GPIO_Port GPIOB
 #define V_H_DOWN_Pin GPIO_PIN_14
@@ -78,6 +86,8 @@ void Error_Handler(void);
 #define W_H_UP_GPIO_Port GPIOA
 #define TIM1_BRAKE_Pin GPIO_PIN_11
 #define TIM1_BRAKE_GPIO_Port GPIOA
+#define TEST_Pin GPIO_PIN_10
+#define TEST_GPIO_Port GPIOC
 /* USER CODE BEGIN Private defines */
 
 /* USER CODE END Private defines */
