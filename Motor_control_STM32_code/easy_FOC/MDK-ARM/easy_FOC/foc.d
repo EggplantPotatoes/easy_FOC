@@ -41,3 +41,4 @@ easy_foc\foc.o: ../Core/Inc/main.h
 easy_foc\foc.o: D:\Keil_ARM\ARM\ARMCC\Bin\..\include\stdio.h
 easy_foc\foc.o: D:\Keil_ARM\ARM\ARMCC\Bin\..\include\math.h
 easy_foc\foc.o: ..\user_app\debug.h
+easy_foc\foc.o: ..\user_app\PWM_Encoder.h

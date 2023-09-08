@@ -338,7 +338,7 @@
               <MiscControls></MiscControls>
               <Define>USE_HAL_DRIVER,STM32G431xx</Define>
               <Undefine></Undefine>
-              <IncludePath>../Core/Inc;        ../Drivers/STM32G4xx_HAL_Driver/Inc;        ../Drivers/STM32G4xx_HAL_Driver/Inc/Legacy;        ../Drivers/CMSIS/Device/ST/STM32G4xx/Include;        ../Drivers/CMSIS/Include;        ..\user_app</IncludePath>
+              <IncludePath>../Core/Inc;                    ../Drivers/STM32G4xx_HAL_Driver/Inc;                    ../Drivers/STM32G4xx_HAL_Driver/Inc/Legacy;                    ../Drivers/CMSIS/Device/ST/STM32G4xx/Include;                    ../Drivers/CMSIS/Include;                    ..\user_app</IncludePath>
             </VariousControls>
           </Cads>
           <Aads>
@@ -398,6 +398,11 @@
               <FilePath>..\user_app\test.c</FilePath>
             </File>
             <File>
+              <FileName>debug.c</FileName>
+              <FileType>1</FileType>
+              <FilePath>..\user_app\debug.c</FilePath>
+            </File>
+            <File>
               <FileName>main.c</FileName>
               <FileType>1</FileType>
               <FilePath>../Core/Src/main.c</FilePath>
@@ -411,11 +416,6 @@
               <FileName>stm32g4xx_hal_msp.c</FileName>
               <FileType>1</FileType>
               <FilePath>../Core/Src/stm32g4xx_hal_msp.c</FilePath>
-            </File>
-            <File>
-              <FileName>debug.c</FileName>
-              <FileType>1</FileType>
-              <FilePath>..\user_app\debug.c</FilePath>
             </File>
           </Files>
         </Group>
@@ -546,6 +546,16 @@
               <FileName>motor_bsp.c</FileName>
               <FileType>1</FileType>
               <FilePath>..\user_app\motor_bsp.c</FilePath>
+            </File>
+            <File>
+              <FileName>PWM_Encoder.c</FileName>
+              <FileType>1</FileType>
+              <FilePath>..\user_app\PWM_Encoder.c</FilePath>
+            </File>
+            <File>
+              <FileName>motor_function.c</FileName>
+              <FileType>1</FileType>
+              <FilePath>..\user_app\motor_function.c</FilePath>
             </File>
           </Files>
         </Group>

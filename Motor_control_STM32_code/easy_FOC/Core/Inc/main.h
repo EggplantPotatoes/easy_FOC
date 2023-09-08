@@ -72,6 +72,8 @@ void Error_Handler(void);
 #define Debug_Rx_GPIO_Port GPIOA
 #define LED_Pin GPIO_PIN_5
 #define LED_GPIO_Port GPIOA
+#define PWM_ENCODER_IN_Pin GPIO_PIN_6
+#define PWM_ENCODER_IN_GPIO_Port GPIOA
 #define W_CURR_ADC2_4_Pin GPIO_PIN_7
 #define W_CURR_ADC2_4_GPIO_Port GPIOA
 #define V_CURR_ADC1_14_Pin GPIO_PIN_11

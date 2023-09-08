@@ -39,3 +39,5 @@ easy_foc\main.o: ..\user_app\test.h
 easy_foc\main.o: ..\user_app\foc.h
 easy_foc\main.o: ..\user_app\debug.h
 easy_foc\main.o: D:\Keil_ARM\ARM\ARMCC\Bin\..\include\stdio.h
+easy_foc\main.o: ..\user_app\PWM_Encoder.h
+easy_foc\main.o: ..\user_app\motor_function.h

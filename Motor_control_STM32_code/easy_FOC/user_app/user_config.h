@@ -8,6 +8,10 @@
 
 #define POWER_BUS    12.0  //总线电压  
 
+//电机相关
+#define  MOTOR_POLE     7
+
+
 
 //控制相关
 #define PWM_FREQUENCY 30000

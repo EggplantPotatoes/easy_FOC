@@ -4,7 +4,7 @@
 #include <stdio.h>
 #include <math.h>
 #include "debug.h"
-
+#include "PWM_Encoder.h"
 FOC_Def FOC;
 
 
@@ -215,17 +215,27 @@ void svpwm_test(void)
     DQ_Def test_dq;
     AlphaBeta_Def test_ab;
     SVPWM_Def svpwm_out;
+	
+	  //’“µÁΩ«∂»¡„µ„
+//	  test_dq.d = 0.5f;
+//    test_dq.q = 0.0f;
+//	  theta = 0;
+//    inverseParkTransform(&test_dq,&test_ab,theta);
+//    SVPWM(&test_ab,&svpwm_out);
+//	  Get_PWM_Encoder_Angles();
+//	  pwm_encoder.angle_rad_offset = pwm_encoder.angle_rad;
+	
+    test_dq.d = 0.0f;
+    test_dq.q = 0.5f;
 
-    test_dq.d = 0.2f;
-    test_dq.q = 0.0f;
+		Get_PWM_Encoder_Angles();
+//			 	vofa_JustFloat_output(pwm_encoder.angle,pwm_encoder.angle_rad,pwm_encoder.electronic_angle,0.0f);
+		theta = pwm_encoder.electronic_angle;
+		inverseParkTransform(&test_dq,&test_ab,theta);
+		SVPWM(&test_ab,&svpwm_out);
 
-    for (theta = 0; theta < 6.2831853f; theta += 0.275f)
-     {
-        inverseParkTransform(&test_dq,&test_ab,theta);
-        SVPWM(&test_ab,&svpwm_out);
-			 	vofa_JustFloat_output(100.0f*svpwm_out.ta,100.0f*svpwm_out.tb,100.0f*svpwm_out.tc,0.0f);
-//			 HAL_Delay(1);
-    }
+
+
 }
 
 

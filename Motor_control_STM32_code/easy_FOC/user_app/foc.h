@@ -75,8 +75,15 @@ extern FOC_Def FOC;
 void FOC_hardware_init(void);
 void FOC_software_init(void);
 
+void clarkeTransform(ABC_Def *abc, AlphaBeta_Def *alphaBeta);
+void parkTransform(const AlphaBeta_Def *alphaBeta, float angle, DQ_Def *dq);
+void inverseParkTransform(DQ_Def *dq, AlphaBeta_Def *alphaBeta, float angle);
+void SVPWM(AlphaBeta_Def *U_alphaBeta, SVPWM_Def *svpwm);
+
 void svpwm_test(void);
 
+
+	
 #endif
 
 
