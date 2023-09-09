@@ -1,0 +1,6 @@
+D:\ST\STM32CubeIDE_1.13.1\STM32CubeIDE\plugins\com.st.stm32cube.ide.mcu.externaltools.gnu-tools-for-stm32.11.3.rel1.win32_1.1.0.202305231506\tools\bin/../lib/gcc/arm-none-eabi/11.3.1/../../../../arm-none-eabi/include/stdio.h:224:5:fputc	1
+D:\ST\STM32CubeIDE_1.13.1\STM32CubeIDE\plugins\com.st.stm32cube.ide.mcu.externaltools.gnu-tools-for-stm32.11.3.rel1.win32_1.1.0.202305231506\tools\bin/../lib/gcc/arm-none-eabi/11.3.1/../../../../arm-none-eabi/include/stdio.h:222:5:fgetc	1
+../user_app/debug.c:35:6:uart_debug_init	1
+../user_app/debug.c:42:6:HAL_UART_RxCpltCallback	1
+../user_app/debug.c:50:6:vofa_FireWater_output	1
+../user_app/debug.c:56:6:vofa_JustFloat_output	1

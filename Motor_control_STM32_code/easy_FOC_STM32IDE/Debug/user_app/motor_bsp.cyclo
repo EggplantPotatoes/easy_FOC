@@ -1,0 +1,2 @@
+../user_app/motor_bsp.c:9:6:PWM_ADC_init	1
+../user_app/motor_bsp.c:30:6:set_PWM_value	1

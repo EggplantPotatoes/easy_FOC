@@ -1,0 +1,2 @@
+../user_app/motor_function.c:5:6:Motor_Align	112	static
+../user_app/motor_function.c:22:6:motor_open_loop_control	112	static

@@ -1,0 +1,7 @@
+../user_app/foc.c:10:6:FOC_hardware_init	1
+../user_app/foc.c:15:6:FOC_software_init	1
+../user_app/foc.c:24:6:clarkeTransform	1
+../user_app/foc.c:35:6:parkTransform	1
+../user_app/foc.c:49:6:inverseParkTransform	1
+../user_app/foc.c:75:6:SVPWM	15
+../user_app/foc.c:206:6:svpwm_test	1

@@ -1,0 +1,6 @@
+../user_app/BEMF.c:8:6:U_UP_PWM_V_DOWN_ON	1
+../user_app/BEMF.c:22:6:U_UP_PWM_W_DOWN_ON	1
+../user_app/BEMF.c:36:6:V_UP_PWM_W_DOWN_ON	1
+../user_app/BEMF.c:50:6:V_UP_PWM_U_DOWN_ON	1
+../user_app/BEMF.c:64:6:W_UP_PWM_U_DOWN_ON	1
+../user_app/BEMF.c:78:6:W_UP_PWM_V_DOWN_ON	1

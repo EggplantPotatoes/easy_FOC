@@ -1,0 +1,7 @@
+../user_app/foc.c:10:6:FOC_hardware_init	8	static
+../user_app/foc.c:15:6:FOC_software_init	4	static
+../user_app/foc.c:24:6:clarkeTransform	16	static
+../user_app/foc.c:35:6:parkTransform	32	static
+../user_app/foc.c:49:6:inverseParkTransform	32	static
+../user_app/foc.c:75:6:SVPWM	24	static
+../user_app/foc.c:206:6:svpwm_test	104	static

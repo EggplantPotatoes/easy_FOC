@@ -1,0 +1,3 @@
+../user_app/test.c:10:6:test_PWM_ADC_init	8	static
+../user_app/test.c:36:6:motor_six_steps	16	static
+../user_app/test.c:127:6:test_pwm_control_motor	16	static
