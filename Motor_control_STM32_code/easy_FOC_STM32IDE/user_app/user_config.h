@@ -4,12 +4,27 @@
 #include "stm32g4xx_hal.h"
 #include "main.h"
 
-// BSP 相关
-
-#define POWER_BUS 12.0 // 总线电压
+#define PI 3.14159265f
 
 // 电机相关
 #define MOTOR_POLE 7
+
+// BSP 相关
+
+
+
+//母线电压采集电阻分压电路
+#define POWER_BUS 12.0 // 总线电压
+#define ADC_V_K   0.0008  //3.3/4096.0  // ADC 与电压转换系数
+#define VBUS_R1   180  //KΩ
+#define VBUS_R2   12  //KΩ
+#define VBUS_k    0.0625  //VBUS_R2/(VBUS_R1 + VBUS_R2)  //分压系数
+
+//电流采样相关
+
+#define AM_GAIN   1.53 //放大倍数
+#define R_SENSE   0.33  //Ω 采样电阻
+
 
 // 控制相关
 #define PWM_FREQUENCY 30000

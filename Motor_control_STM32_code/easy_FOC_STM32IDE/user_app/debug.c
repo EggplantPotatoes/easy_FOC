@@ -49,7 +49,7 @@ void HAL_UART_RxCpltCallback(UART_HandleTypeDef *huart)
 // 本协议是CSV风格的字符串流，直观简洁，编程像printf简单
 void vofa_FireWater_output(float s1, float s2, float s3)
 {
-  //	printf("simples:%f,%f,%f\n", s1, s2,s3);
+  	printf("simples:%f,%f,%f\n", s1, s2,s3);
 }
 
 // 本协议是纯十六进制浮点传输

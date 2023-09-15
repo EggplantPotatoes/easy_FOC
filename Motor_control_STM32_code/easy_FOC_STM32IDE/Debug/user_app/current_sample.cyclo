@@ -1,1 +1,2 @@
-../user_app/current_sample.c:19:6:HAL_ADCEx_InjectedConvCpltCallback	3
+../user_app/current_sample.c:21:6:HAL_ADCEx_InjectedConvCpltCallback	3
+../user_app/current_sample.c:43:6:GetCurrentOffset	2

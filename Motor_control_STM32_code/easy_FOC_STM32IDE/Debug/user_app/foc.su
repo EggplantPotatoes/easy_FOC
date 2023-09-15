@@ -4,4 +4,4 @@
 ../user_app/foc.c:35:6:parkTransform	32	static
 ../user_app/foc.c:49:6:inverseParkTransform	32	static
 ../user_app/foc.c:75:6:SVPWM	24	static
-../user_app/foc.c:206:6:svpwm_test	104	static
+../user_app/foc.c:208:6:svpwm_test	104	static

@@ -76,6 +76,8 @@ void Error_Handler(void);
 #define PWM_ENCODER_IN_GPIO_Port GPIOA
 #define W_CURR_ADC2_4_Pin GPIO_PIN_7
 #define W_CURR_ADC2_4_GPIO_Port GPIOA
+#define ENCODER_ADC_Pin GPIO_PIN_4
+#define ENCODER_ADC_GPIO_Port GPIOC
 #define V_CURR_ADC1_14_Pin GPIO_PIN_11
 #define V_CURR_ADC1_14_GPIO_Port GPIOB
 #define U_H_DOWN_Pin GPIO_PIN_13
@@ -84,6 +86,10 @@ void Error_Handler(void);
 #define V_H_DOWN_GPIO_Port GPIOB
 #define W_H_DOWN_Pin GPIO_PIN_15
 #define W_H_DOWN_GPIO_Port GPIOB
+#define ENCODER_SCL_Pin GPIO_PIN_8
+#define ENCODER_SCL_GPIO_Port GPIOC
+#define ENCODER_SDA_Pin GPIO_PIN_9
+#define ENCODER_SDA_GPIO_Port GPIOC
 #define U_H_UP_Pin GPIO_PIN_8
 #define U_H_UP_GPIO_Port GPIOA
 #define V_H_UP_Pin GPIO_PIN_9
@@ -94,6 +100,7 @@ void Error_Handler(void);
 #define TIM1_BRAKE_GPIO_Port GPIOA
 #define TEST_Pin GPIO_PIN_10
 #define TEST_GPIO_Port GPIOC
+
 /* USER CODE BEGIN Private defines */
 
 /* USER CODE END Private defines */
@@ -103,5 +110,3 @@ void Error_Handler(void);
 #endif
 
 #endif /* __MAIN_H */
-
-/************************ (C) COPYRIGHT STMicroelectronics *****END OF FILE****/

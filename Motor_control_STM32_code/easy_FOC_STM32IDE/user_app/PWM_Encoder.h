@@ -3,7 +3,7 @@
 
 #include "stm32g4xx_hal.h"
 
-#define PI 3.14159265f
+
 
 typedef struct
 {

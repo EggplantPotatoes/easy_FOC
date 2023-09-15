@@ -1,4 +1,4 @@
-../user_app/PWM_Encoder.c:10:6:PWM_encoder_init	1
-../user_app/PWM_Encoder.c:17:6:HAL_TIM_IC_CaptureCallback	4
-../user_app/PWM_Encoder.c:34:6:test_PWM_encoder	2
-../user_app/PWM_Encoder.c:57:6:Get_PWM_Encoder_Angles	2
+../user_app/PWM_Encoder.c:12:6:PWM_encoder_init	1
+../user_app/PWM_Encoder.c:19:6:HAL_TIM_IC_CaptureCallback	4
+../user_app/PWM_Encoder.c:39:6:Get_PWM_Encoder_Angles	2
+../user_app/PWM_Encoder.c:60:6:test_PWM_encoder	2

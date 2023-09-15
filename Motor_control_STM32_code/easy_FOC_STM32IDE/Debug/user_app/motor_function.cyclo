@@ -1,2 +1,5 @@
-../user_app/motor_function.c:5:6:Motor_Align	1
-../user_app/motor_function.c:22:6:motor_open_loop_control	1
+../user_app/motor_function.c:14:6:motor_function_init	1
+../user_app/motor_function.c:23:6:Motor_Align	1
+../user_app/motor_function.c:82:6:motor_open_loop_control	1
+../user_app/motor_function.c:106:6:motor_current_loop_control	1
+../user_app/motor_function.c:128:6:HAL_TIM_PeriodElapsedCallback	3

@@ -1,0 +1,2 @@
+../user_app/ADC_encoder.c:16:6:get_ADC_encoder_data	16	static
+../user_app/ADC_encoder.c:36:6:test_adc_encoder	104	static

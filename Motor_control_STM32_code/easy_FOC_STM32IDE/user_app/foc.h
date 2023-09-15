@@ -55,11 +55,11 @@ typedef struct
 
 typedef struct
 {
-    float U_d;
-    float U_q;
+//    float U_d;
+//    float U_q;
     float theta;
-    float U_alpha;
-    float U_bate;
+//    float U_alpha;
+//    float U_bate;
     ABC_Def Phase_Curr;
     AlphaBeta_Def AlphaBeta;
     DQ_Def DQ;

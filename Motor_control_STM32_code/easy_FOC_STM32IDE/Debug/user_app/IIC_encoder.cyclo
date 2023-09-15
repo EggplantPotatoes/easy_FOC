@@ -1,0 +1,5 @@
+../user_app/IIC_encoder.c:18:15:mt6701_write_reg	1
+../user_app/IIC_encoder.c:23:15:mt6701_write_regs	1
+../user_app/IIC_encoder.c:28:15:mt6701_read_reg	1
+../user_app/IIC_encoder.c:33:6:mt6701_delay	1
+../user_app/IIC_encoder.c:39:6:encoder_read_data	1
