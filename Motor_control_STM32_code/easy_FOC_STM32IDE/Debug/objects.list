@@ -32,6 +32,7 @@
 "./user_app/IIC_encoder.o"
 "./user_app/PWM_Encoder.o"
 "./user_app/current_sample.o"
+"./user_app/data_filter.o"
 "./user_app/debug.o"
 "./user_app/foc.o"
 "./user_app/motor_bsp.o"

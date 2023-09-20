@@ -8,7 +8,7 @@
 
 PID_Def curret_Id_pid;
 PID_Def curret_Iq_pid;
-
+PID_Def speed_loop_pid;
 
 void PID_init(void)
 {
@@ -23,9 +23,10 @@ void PID_init(void)
 	curret_Iq_pid.Kd = curret_Id_pid.Kd;
 	curret_Iq_pid.Integral_max = curret_Id_pid.Integral_max;
 
-//	curret_Iq_pid.Kp = 0.0f;
-//	curret_Iq_pid.Ki = 0.0f;
-//	curret_Iq_pid.Kd = 0.0f;
+	speed_loop_pid.Kp = 0.00255f;
+	speed_loop_pid.Ki = 0.00015f;
+	speed_loop_pid.Kd = 0;
+	speed_loop_pid.Integral_max = 100.0f;
 
 }
 
@@ -42,6 +43,32 @@ float PID_control(PID_Def *PID,float set_Val,float Actual_Val)
 
 	PID->out=PID->Kp*PID->err + PID->Ki*(PID->Integral) + PID->Kd*(PID->err-PID->err_next);
 	PID->err_next=PID->err;
+    return PID->out;
+}
+
+
+//位置式PID
+float position_PID_control(PID_Def *PID,float set_Val,float Actual_Val)
+{
+
+	float inter;
+	PID->SetVal= set_Val;
+	PID->ActualVal=Actual_Val;
+
+	PID->err=set_Val-Actual_Val;
+	if(fabs(PID->err)>=1.0f) //位置精度1°
+	{
+        inter = PID->err;
+        PID->Integral += inter;
+        PID->Integral = LIMIT((PID->Integral),-100.0f,100.0f);
+        PID->out = PID->Kp*PID->err + PID->Ki*(PID->Integral) + PID->Kd*(PID->err - PID->err_next);
+        PID->err_next = PID->err;
+
+	}
+	else
+	{
+		PID->out = 0.0f;
+	}
     return PID->out;
 }
 

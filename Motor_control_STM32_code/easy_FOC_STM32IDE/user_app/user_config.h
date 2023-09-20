@@ -29,5 +29,14 @@
 // 控制相关
 #define PWM_FREQUENCY 30000
 #define PWM_PERIOD TIM_CLK_MHz * 1000000 / PWM_FREQUENCY / 2 // PWM 频率
+// 控制相关
+#define PWM_FREQUENCY 30000
+#define PWM_PERIOD TIM_CLK_MHz * 1000000 / PWM_FREQUENCY / 2 // PWM 频率
+#define CONTROL_FRE   2000.0f //FOC 控制频率 Hz
+#define CONTROL_PERIOD   1/CONTROL_FRE //FOC 控制频率 Hz
+#define OPEN_ACC_TIME    1.0f//FOC 控制频率 Hz
+#define SPEED_ACC_TIME    1.0f//FOC 控制频率 Hz
+#define ANGLE_SPEED_RATIO    CONTROL_FRE*60/360  // 角度转换成速度系数
 
 #endif
+

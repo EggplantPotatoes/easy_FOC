@@ -1,4 +1,5 @@
-Core/Src/main.o: ../Core/Src/main.c ../Core/Inc/main.h \
+user_app/data_filter.o: ../user_app/data_filter.c \
+ ../user_app/data_filter.h ../Core/Inc/main.h \
  ../Drivers/STM32G4xx_HAL_Driver/Inc/stm32g4xx_hal.h \
  ../Core/Inc/stm32g4xx_hal_conf.h \
  ../Drivers/STM32G4xx_HAL_Driver/Inc/stm32g4xx_hal_rcc.h \
@@ -32,16 +33,8 @@ Core/Src/main.o: ../Core/Src/main.c ../Core/Inc/main.h \
  ../Drivers/STM32G4xx_HAL_Driver/Inc/stm32g4xx_hal_tim.h \
  ../Drivers/STM32G4xx_HAL_Driver/Inc/stm32g4xx_hal_tim_ex.h \
  ../Drivers/STM32G4xx_HAL_Driver/Inc/stm32g4xx_hal_uart.h \
- ../Drivers/STM32G4xx_HAL_Driver/Inc/stm32g4xx_hal_uart_ex.h \
- F:/Brushless_Motor/Software/ST_motor/My_ST_Motor/STM32_IDE_code/easy_FOC_STM32IDE/user_app/test.h \
- F:/Brushless_Motor/Software/ST_motor/My_ST_Motor/STM32_IDE_code/easy_FOC_STM32IDE/user_app/foc.h \
- F:/Brushless_Motor/Software/ST_motor/My_ST_Motor/STM32_IDE_code/easy_FOC_STM32IDE/user_app/debug.h \
- F:/Brushless_Motor/Software/ST_motor/My_ST_Motor/STM32_IDE_code/easy_FOC_STM32IDE/user_app/PWM_Encoder.h \
- F:/Brushless_Motor/Software/ST_motor/My_ST_Motor/STM32_IDE_code/easy_FOC_STM32IDE/user_app/motor_function.h \
- F:/Brushless_Motor/Software/ST_motor/My_ST_Motor/STM32_IDE_code/easy_FOC_STM32IDE/user_app/current_sample.h \
- F:/Brushless_Motor/Software/ST_motor/My_ST_Motor/STM32_IDE_code/easy_FOC_STM32IDE/user_app/pid_control.h \
- F:/Brushless_Motor/Software/ST_motor/My_ST_Motor/STM32_IDE_code/easy_FOC_STM32IDE/user_app/IIC_encoder.h \
- F:/Brushless_Motor/Software/ST_motor/My_ST_Motor/STM32_IDE_code/easy_FOC_STM32IDE/user_app/ADC_encoder.h
+ ../Drivers/STM32G4xx_HAL_Driver/Inc/stm32g4xx_hal_uart_ex.h
+../user_app/data_filter.h:
 ../Core/Inc/main.h:
 ../Drivers/STM32G4xx_HAL_Driver/Inc/stm32g4xx_hal.h:
 ../Core/Inc/stm32g4xx_hal_conf.h:
@@ -77,12 +70,3 @@ Core/Src/main.o: ../Core/Src/main.c ../Core/Inc/main.h \
 ../Drivers/STM32G4xx_HAL_Driver/Inc/stm32g4xx_hal_tim_ex.h:
 ../Drivers/STM32G4xx_HAL_Driver/Inc/stm32g4xx_hal_uart.h:
 ../Drivers/STM32G4xx_HAL_Driver/Inc/stm32g4xx_hal_uart_ex.h:
-F:/Brushless_Motor/Software/ST_motor/My_ST_Motor/STM32_IDE_code/easy_FOC_STM32IDE/user_app/test.h:
-F:/Brushless_Motor/Software/ST_motor/My_ST_Motor/STM32_IDE_code/easy_FOC_STM32IDE/user_app/foc.h:
-F:/Brushless_Motor/Software/ST_motor/My_ST_Motor/STM32_IDE_code/easy_FOC_STM32IDE/user_app/debug.h:
-F:/Brushless_Motor/Software/ST_motor/My_ST_Motor/STM32_IDE_code/easy_FOC_STM32IDE/user_app/PWM_Encoder.h:
-F:/Brushless_Motor/Software/ST_motor/My_ST_Motor/STM32_IDE_code/easy_FOC_STM32IDE/user_app/motor_function.h:
-F:/Brushless_Motor/Software/ST_motor/My_ST_Motor/STM32_IDE_code/easy_FOC_STM32IDE/user_app/current_sample.h:
-F:/Brushless_Motor/Software/ST_motor/My_ST_Motor/STM32_IDE_code/easy_FOC_STM32IDE/user_app/pid_control.h:
-F:/Brushless_Motor/Software/ST_motor/My_ST_Motor/STM32_IDE_code/easy_FOC_STM32IDE/user_app/IIC_encoder.h:
-F:/Brushless_Motor/Software/ST_motor/My_ST_Motor/STM32_IDE_code/easy_FOC_STM32IDE/user_app/ADC_encoder.h:

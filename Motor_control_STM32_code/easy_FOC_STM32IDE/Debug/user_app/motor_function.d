@@ -35,7 +35,8 @@ user_app/motor_function.o: ../user_app/motor_function.c \
  ../Drivers/STM32G4xx_HAL_Driver/Inc/stm32g4xx_hal_uart_ex.h \
  ../user_app/motor_function.h ../user_app/PWM_Encoder.h ../user_app/foc.h \
  ../user_app/user_config.h ../user_app/current_sample.h \
- ../user_app/pid_control.h ../user_app/debug.h ../user_app/ADC_encoder.h
+ ../user_app/pid_control.h ../user_app/debug.h ../user_app/ADC_encoder.h \
+ ../user_app/motor_bsp.h ../user_app/data_filter.h
 ../Core/Inc/main.h:
 ../Drivers/STM32G4xx_HAL_Driver/Inc/stm32g4xx_hal.h:
 ../Core/Inc/stm32g4xx_hal_conf.h:
@@ -79,3 +80,5 @@ user_app/motor_function.o: ../user_app/motor_function.c \
 ../user_app/pid_control.h:
 ../user_app/debug.h:
 ../user_app/ADC_encoder.h:
+../user_app/motor_bsp.h:
+../user_app/data_filter.h:

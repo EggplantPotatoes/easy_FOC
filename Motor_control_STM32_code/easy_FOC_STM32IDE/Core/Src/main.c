@@ -137,10 +137,11 @@ int main(void)
     /* USER CODE END WHILE */
 
     /* USER CODE BEGIN 3 */
-    vofa_JustFloat_output(FOC.AlphaBeta.alpha,FOC.AlphaBeta.beta,FOC.DQ.d,FOC.DQ.q);
+//    vofa_JustFloat_output(FOC.AlphaBeta.alpha,FOC.AlphaBeta.beta,FOC.DQ.d,FOC.DQ.q);
 //	    vofa_JustFloat_output(current.Ia,current.Ib,current.Ic,FOC.DQ.d);
 //	  	vofa_JustFloat_output(current.Ia,current.Ib,current.Ic,adc_encoder.electronic_angle);
-//	  	vofa_JustFloat_output(pid_ud_set,Iq_set,FOC.DQ.d,FOC.DQ.q);
+	  	vofa_JustFloat_output(m_c.speed,m_c.speed_filter_win,m_c.speed_set,0.0f);
+
 
   }
   /* USER CODE END 3 */

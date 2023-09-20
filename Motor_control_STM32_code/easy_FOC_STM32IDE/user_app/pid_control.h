@@ -36,6 +36,7 @@ typedef struct
 
 extern PID_Def curret_Id_pid;
 extern PID_Def curret_Iq_pid;
+extern PID_Def speed_loop_pid;
 
 extern float pid_out_ud;
 extern float pid_out_uq;
@@ -44,6 +45,6 @@ extern float pid_uq_set;
 
 void PID_init(void);
 float PID_control(PID_Def *PID,float set_Val,float Actual_Val);
-
+float position_PID_control(PID_Def *PID,float set_Val,float Actual_Val);
 
 #endif /* PID_CONTROL_H_ */

@@ -1,5 +1,9 @@
-../user_app/motor_function.c:14:6:motor_function_init	1
-../user_app/motor_function.c:23:6:Motor_Align	1
-../user_app/motor_function.c:82:6:motor_open_loop_control	1
-../user_app/motor_function.c:106:6:motor_current_loop_control	1
-../user_app/motor_function.c:128:6:HAL_TIM_PeriodElapsedCallback	3
+../user_app/motor_function.c:18:6:motor_function_init	1
+../user_app/motor_function.c:25:6:motor_stop	1
+../user_app/motor_function.c:30:6:Motor_Align	1
+../user_app/motor_function.c:93:6:motor_open_loop_control	3
+../user_app/motor_function.c:122:6:motor_current_loop_control	1
+../user_app/motor_function.c:142:7:motor_ramp	5
+../user_app/motor_function.c:174:6:motor_speed_loop_control	4
+../user_app/motor_function.c:210:6:motor_position_loop_control	1
+../user_app/motor_function.c:216:6:HAL_TIM_PeriodElapsedCallback	7
