@@ -16,7 +16,7 @@
 #define LIMIT( x,min,max ) ( (x) < (min)  ? (min) : ( (x) > (max) ? (max) : (x) ) )
 
 #define INTEGRAL_MAX   6.930f    //sqrt(3)/3  * Udc mv
-
+#define POSITION_ACCURACY   2.0f   //sqrt(3)/3  * Udc mv
 typedef struct
 {
     float SetVal;            //定义设定值
@@ -37,6 +37,7 @@ typedef struct
 extern PID_Def curret_Id_pid;
 extern PID_Def curret_Iq_pid;
 extern PID_Def speed_loop_pid;
+extern PID_Def position_loop_pid;
 
 extern float pid_out_ud;
 extern float pid_out_uq;

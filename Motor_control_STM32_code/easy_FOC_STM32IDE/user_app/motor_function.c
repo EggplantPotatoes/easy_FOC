@@ -18,7 +18,8 @@ MOTOR_CONTROL m_c;
 void motor_function_init(void)
 {
 	HAL_TIM_Base_Start_IT(&htim2); //打开定时器，1ms
-	m_c.mode = SPEED_LOOP_MODE;
+//	m_c.mode = SPEED_LOOP_MODE;
+	m_c.mode = POSITION_LOOP_MODE;
 }
 
 
@@ -209,6 +210,26 @@ void motor_speed_loop_control(float speed_set) // 速度环控制
 
 void motor_position_loop_control(float position_set) // 位置环控制
 {
+	float position_pid_out;
+	float delta;
+   //计算角度增量
+	get_ADC_encoder_data();
+	m_c.current_angle = adc_encoder.angle;
+	delta = m_c.current_angle - m_c.angle_old;  //两次采集的角度差值
+	m_c.angle_err = delta;
+	if(delta<-180.0f)  //处理0，360°角度突变点  正转
+	{
+		m_c.angle_err = delta + 360.0f;
+	}
+	if(delta>180.0f)  //处理0，360°角度突变点  反转
+	{
+		m_c.angle_err = 360.0f - delta;
+	}
+	m_c.position_set_value = m_c.position_set_value - m_c.angle_err; //计算剩余角度
+	m_c.angle_old = m_c.current_angle;
+	position_pid_out = position_PID_control(&position_loop_pid,position_set,m_c.angle_err);
+	position_pid_out = LIMIT(position_pid_out,-0.5f,0.5f);  //限制转速
+	motor_open_loop_control(0.0f,position_pid_out);
 
 }
 
@@ -225,7 +246,6 @@ void HAL_TIM_PeriodElapsedCallback(TIM_HandleTypeDef *htim)
     		m_c.ramp_acc_value = motor_ramp(m_c.open_value,OPEN_ACC_TIME);  //爬坡，防止电机急停急起
     		motor_open_loop_control(0.0f,m_c.ramp_acc_value);
     		motor_speed_loop_control(0.0f);
-
     	}
     	else if(m_c.mode==CUREENT_LOOP_MODE)
     	{
@@ -238,8 +258,7 @@ void HAL_TIM_PeriodElapsedCallback(TIM_HandleTypeDef *htim)
     	}
     	else if(m_c.mode==POSITION_LOOP_MODE)
     	{
-    		m_c.ramp_acc_value = motor_ramp(m_c.position_value,OPEN_ACC_TIME);  //爬坡，防止电机急停急起
-    		motor_position_loop_control(m_c.ramp_acc_value);
+    		motor_position_loop_control(m_c.position_set_value);
     	}
 //    	motor_open_loop_control(0.0f,0.0f);   //0.5ms控制周期  2KHz
 //    	motor_current_loop_control(Iq_set);

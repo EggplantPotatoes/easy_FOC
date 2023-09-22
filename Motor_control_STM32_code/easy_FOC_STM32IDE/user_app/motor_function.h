@@ -25,8 +25,9 @@ typedef struct
  float speed_set;
 // float speed_filter_lp;
 
- float position_value;
-
+ float position_set_value;
+ float position_old_value;
+ float position_finish;
 }MOTOR_CONTROL;
 
 extern MOTOR_CONTROL m_c ;

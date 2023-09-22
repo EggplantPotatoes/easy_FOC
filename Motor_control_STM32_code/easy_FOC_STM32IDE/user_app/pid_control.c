@@ -9,6 +9,10 @@
 PID_Def curret_Id_pid;
 PID_Def curret_Iq_pid;
 PID_Def speed_loop_pid;
+PID_Def position_loop_pid;
+
+
+
 
 void PID_init(void)
 {
@@ -27,6 +31,11 @@ void PID_init(void)
 	speed_loop_pid.Ki = 0.00015f;
 	speed_loop_pid.Kd = 0;
 	speed_loop_pid.Integral_max = 100.0f;
+
+	position_loop_pid.Kp = 0.001f;
+	position_loop_pid.Ki = 0.0003f;
+	position_loop_pid.Kd = 0.0001;
+	position_loop_pid.Integral_max = 100.0f;
 
 }
 
@@ -56,7 +65,7 @@ float position_PID_control(PID_Def *PID,float set_Val,float Actual_Val)
 	PID->ActualVal=Actual_Val;
 
 	PID->err=set_Val-Actual_Val;
-	if(fabs(PID->err)>=1.0f) //位置精度1°
+	if(fabs(PID->err)>=POSITION_ACCURACY) //位置精度
 	{
         inter = PID->err;
         PID->Integral += inter;
