@@ -1,3 +1,5 @@
+#项目对应的视频及文档
+请参见https://space.bilibili.com/679640313?spm_id_from=333.1007.0.0
 # 说明
 main分支没有内容，开源代码请前往其他分支
 # easy_FOC
